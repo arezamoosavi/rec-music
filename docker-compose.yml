@@ -4,9 +4,9 @@ services:
   web:
     build:
       context: .
-      dockerfile: ./Image/Dockerfile
+      dockerfile: ./src/Dockerfile
     volumes:
-      - ./main:/main
+      - ./src/main:/main
     ports:
       - "8000:80"
     restart: unless-stopped
